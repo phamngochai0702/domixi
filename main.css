@@ -1,0 +1,120 @@
+@font-face {
+    font-family: "Azeroy";
+    src: url("ref/Azeroyhd-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "ART";
+    src: url("ref/ArtOfCreation_Final-Regular.ttf") format("opentype");
+}
+
+html {
+    background-color: #333;
+    font-family: "Azeroy", sans-serif;
+    color: var(--mauvb);
+    font-style: italic;
+    font-size:360%;
+      color: #fff;
+  text-shadow:
+    0 0 5px rgb(7, 197, 64),
+    0 0 10px rgb(4, 234, 73),
+    0 0 20px rgb(18, 4, 174),
+    0 0 40px rgb(13, 2, 117);
+}
+.box {
+    font-family: "ART", Arial, Helvetica, sans-serif;
+
+}
+:root {
+    --mauvb: rgba(229, 201, 201, 0.77);
+    --maudb: rgb(140, 224, 140);
+    --maukhac: rgb(108, 194, 237);
+}
+
+ul a {
+    text-decoration: none !important;
+    text-decoration: line-through;
+}
+a:visited {
+  color: inherit;
+}
+.dong1 {
+    color: var(--maudb);
+}
+.dong2 {
+    color: rgb(236, 161, 161);
+}
+ul li:hover {
+    color: var(--maukhac);
+}
+.dong3 {
+    color: #df9;
+}
+.dong3:active {
+        color:crimson;
+    }
+.box {
+    display: flex;
+    gap:20px;
+}
+.box div {
+    height:250px;
+    width:250px;
+    color:beige;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20%;
+}
+::selection {
+    color:rgb(69, 7, 17);
+    background-color:rgb(236, 178, 214);
+}
+.box div:active {
+    background-color:rgb(84, 211, 109);
+}
+.box1 {
+    background-color:navy;
+}
+.box2 {
+    background-color:red;
+}
+.box3 {
+    background-color:brown;
+}
+
+.chia {
+    display: flex;
+}
+
+.hop1 ul {
+    width:fit-content;
+}
+
+.phai{
+    display: flex ;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+input, textarea {
+  font-family: inherit;
+  color: inherit;
+  text-shadow:inherit;
+}
+input {
+    margin-top:30px;
+    margin-bottom:65px;
+    width:100%;
+    height:10%;
+    font-size:100%
+}
+body {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url("https://img.youtube.com/vi/NPWyyrft5Go/maxresdefault.jpg");
+}
+.anhchinh {
+    filter: hue-rotate(40deg) contrast(300%);
+    border-radius: 20%;
+}
