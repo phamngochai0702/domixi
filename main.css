@@ -14,7 +14,7 @@ html {
     color: var(--mauvb);
     font-style: italic;
     font-size:360%;
-      color: #fff;
+    color: #fff;
   text-shadow:
     0 0 5px rgb(7, 197, 64),
     0 0 10px rgb(4, 234, 73),
@@ -32,8 +32,8 @@ html {
 }
 
 ul a {
-    text-decoration: none !important;
-    text-decoration: line-through;
+    color:inherit;
+    text-decoration: overline dotted rgb(150, 149, 149) 6px;
 }
 a:visited {
   color: inherit;
@@ -50,14 +50,18 @@ ul li:hover {
 .dong3 {
     color: #df9;
 }
-.dong3:active {
+ul li:active {
         color:crimson;
     }
 .box {
     display: flex;
     gap:20px;
-}
-.box div {
+    text-shadow:
+    0 0 5px rgb(190, 5, 5),
+    0 0 10px rgb(177, 7, 7),
+    0 0 20px rgb(234, 1, 1),
+    0 0 40px rgb(169, 4, 4);
+    div {
     height:250px;
     width:250px;
     color:beige;
@@ -66,21 +70,39 @@ ul li:hover {
     justify-content: center;
     border-radius: 20%;
 }
-::selection {
+}
+.box::selection {
     color:rgb(69, 7, 17);
-    background-color:rgb(236, 178, 214);
+    background-color:rgb(255, 0, 200);
+}
+ul li::selection {
+    color:rgb(38, 1, 133);
+    background-color:rgb(4, 171, 54);
+}
+
+input::selection {
+    color:rgb(223, 2, 2);
+    background-color:rgb(123, 5, 178);
+}
+img::selection {
+    background-color: navy;
 }
 .box div:active {
-    background-color:rgb(84, 211, 109);
+    background: radial-gradient(circle, rgb(225, 9, 207) 20%, rgb(0, 150, 250) 90%);
+}
+
+.box div {
+    box-shadow: 0 15px 15px rgba(114, 1, 1, 0.8),
+                0 15px 20px rgb(3, 242, 255);
 }
 .box1 {
-    background-color:navy;
+    background: linear-gradient(red,blue);
 }
 .box2 {
-    background-color:red;
+    background: linear-gradient(45deg,yellow,green);
 }
 .box3 {
-    background-color:brown;
+    background: radial-gradient(circle, #003 20%, rgb(168, 15, 171) 90%);
 }
 
 .chia {
@@ -90,31 +112,52 @@ ul li:hover {
 .hop1 ul {
     width:fit-content;
 }
-
-.phai{
-    display: flex ;
+.trai{
     margin: 0 auto;
+}
+.phai{
+    margin-top:120px;
+    margin-right: 60px;
+    display: flex ;
     justify-content: center;
     align-items: center;
 }
 
 input, textarea {
   font-family: inherit;
-  color: inherit;
+  color:rgb(214, 247, 247);
   text-shadow:inherit;
 }
 input {
     margin-top:30px;
     margin-bottom:65px;
-    width:100%;
+    width:90%;
     height:10%;
     font-size:100%
 }
 body {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
               url("https://img.youtube.com/vi/NPWyyrft5Go/maxresdefault.jpg");
+    background-size: cover;
 }
 .anhchinh {
     filter: hue-rotate(40deg) contrast(300%);
     border-radius: 20%;
+}
+.in{
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  outline: none;
+  transition: all 0.3s ease;
+  background:linear-gradient(red,green);
+}
+
+.in:focus {
+  border-color: #007bff;
+  box-shadow: 0 10px 8px rgba(0,123,255,0.3);
+}
+::placeholder {
+    color:rgba(228, 244, 244, 0.622);
 }
